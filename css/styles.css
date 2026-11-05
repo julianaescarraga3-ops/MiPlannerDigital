@@ -1,0 +1,110 @@
+
+/* PALETA DE COLORES */
+:root {
+    --crema: #F9F0DB;
+    --gris-verde: #A0A08F;
+    --verde-oscuro: #708482;
+    --verde-claro: #98ABA8;
+    --marron: #5A544F;
+}
+
+/* CONFIGURACIÓN GENERAL */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: var(--marron);
+
+    /* Imagen de fondo */
+    background-image:
+        linear-gradient(
+            rgba(249, 240, 219, 0.72),
+            rgba(249, 240, 219, 0.72)
+        ),
+        url("https://i.pinimg.com/originals/20/ff/68/20ff688435c2e81a60b20261c7c4f811.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: var(--verde-oscuro);
+    color: var(--crema);
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* PANELES DEL PLANNER */
+.panel {
+    background-color: rgba(249, 240, 219, 0.93);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(90, 84, 79, 0.15);
+    height: 100%;
+}
+
+/* TÍTULOS DE LOS PANELES */
+.panel h2 {
+    color: var(--verde-oscuro);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* BOTÓN */
+.btn-primary {
+    background-color: var(--verde-oscuro);
+    border-color: var(--verde-oscuro);
+}
+
+.btn-primary:hover {
+    background-color: var(--marron);
+    border-color: var(--marron);
+}
+
+/* BARRA DE PROGRESO */
+.progress {
+    background-color: var(--gris-verde);
+    height: 22px;
+}
+
+.progress-bar {
+    background-color: var(--verde-oscuro);
+}
+
+/* CAMPOS DEL FORMULARIO */
+.form-label {
+    color: var(--marron);
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid var(--gris-verde);
+    border-radius: 8px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--verde-oscuro);
+    box-shadow: 0 0 0 0.2rem rgba(112, 132, 130, 0.2);
+}
+
+/* ADAPTACIÓN A PANTALLAS PEQUEÑAS */
+@media (max-width: 991px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .panel {
+        margin-bottom: 15px;
+    }
+}
