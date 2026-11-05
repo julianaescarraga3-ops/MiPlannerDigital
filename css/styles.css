@@ -108,3 +108,53 @@ header h1 {
         margin-bottom: 15px;
     }
 }
+
+/* TARJETA DE TAREA */
+.task-card {
+    background-color: rgba(255, 255, 255, 0.90);
+    border: 1px solid var(--gris-verde);
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(90, 84, 79, 0.12);
+}
+
+/* TÍTULO DE LA TAREA */
+.task-card .card-title {
+    color: var(--verde-oscuro);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* TEXTO DE LA TARJETA */
+.task-card .card-text {
+    color: var(--marron);
+    font-size: 0.95rem;
+}
+
+/* ETIQUETA DE ESTADO */
+.task-card .badge {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+}
+/* ESTADO PENDIENTE */
+.estado-pendiente {
+    background-color: var(--verde-claro);
+    color: var(--marron);
+}
+
+/* ESTADOS DE LAS TAREAS */
+
+.estado-pendiente {
+    background-color: var(--verde-claro);
+    color: var(--marron);
+}
+
+.estado-proceso {
+    background-color: var(--verde-oscuro);
+    color: var(--crema);
+}
+
+.estado-finalizada {
+    background-color: var(--gris-verde);
+    color: var(--marron);
+}
